@@ -7,4 +7,4 @@
 4--Khadeeja Ilyas (IU05-0122-0251)
 
 ## DESCRIPTION
-HR360 is a payroll and workforce automation system powered by AI that aims to improve staff management, increase productivity, and streamline HR procedures. In order to ensure a smooth HR experience, the system offers a full platform for managing personnel records, payroll processing, recruitment, attendance monitoring, and more.
+HR360 is a payroll and workforce automation system powered by AI that aims to improve staff management, increase productivity, and streamline HR procedures. In order to ensure a smooth HR experience, the system offers a full platform for managing personal records, payroll processing, recruitment, attendance monitoring, and more.
