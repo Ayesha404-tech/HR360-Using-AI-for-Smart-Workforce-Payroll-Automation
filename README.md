@@ -1,260 +1,87 @@
-# HR360 - Complete HR Management System
+# HR360 – Complete HR Management System with AI-Powered Smart Workforce & Payroll Automation
 
 A modern, AI-powered HR management system built with React, TypeScript, Tailwind CSS, and Convex backend.
 
-## 🚀 Features
+---
 
-### Core Modules
-- **Authentication & Authorization** - JWT-based secure login with role-based access
-- **Dashboard** - Role-specific dashboards with KPIs and analytics
-- **User Management** - Complete CRUD operations with role assignment
-- **Attendance Tracking** - Real-time clock-in/out with status monitoring
-- **Leave Management** - Apply, approve, reject leave requests
-- **Payroll System** - Salary calculation, payslips, and tax management
-- **Performance Management** - KPI tracking, reviews, and goal setting
-- **Interview Scheduling** - Complete interview lifecycle management
-- **AI Resume Screening** - Automated candidate evaluation and scoring
-- **Exit Management** - Resignation handling and clearance tracking
-- **Reports & Analytics** - Comprehensive reporting with charts
-- **AI Chatbot** - Intelligent HR assistant for employee queries
-- **Notification System** - Real-time alerts and updates
+## 👥 Group Members
 
-### AI Features
-- **Resume Analysis** - Automatic skill extraction and candidate scoring
-- **Chatbot Support** - Natural language processing for HR queries
-- **Performance Insights** - AI-driven performance recommendations
-- **Predictive Analytics** - Workforce trends and insights
+1. Syeda Masooma Zainab Zaidi (IU05-0321-0312)  
+2. Ayesha Shabbir (IU05-0321-0312)  
+3. Aleena Abbas (IU05-0322-0054)  
+4. Khadeeja Ilyas (IU05-0122-0251)
 
-### External Integrations
-- **Email Notifications** - SendGrid integration for automated emails
-- **Cloud Storage** - Cloudinary for file uploads and management
-- **Real-time Updates** - Live notifications and data synchronization
+---
+
+## 📌 Description
+
+**HR360** is a full-stack, role-based HR management system designed for modern organizations.  
+It automates core HR processes such as recruitment, attendance tracking, payroll management, performance monitoring, and exit management — all integrated with AI-driven features like resume screening and chatbot support.
+
+---
+
+## 🚀 Core Features
+
+### 📚 Modules
+- **Authentication & Authorization** — Secure JWT login with role-based access (Admin, HR, Employee, Candidate)
+- **Dashboard** — Role-specific dashboards with KPIs and analytics
+- **User Management** — Full CRUD with role assignment
+- **Attendance & Leave** — Real-time clock-in/out, leave request, approval workflows
+- **Payroll System** — Salary calculation, payslips, tax management
+- **Performance Management** — KPI tracking, performance reviews, goal setting
+- **Interview Scheduling** — End-to-end interview lifecycle
+- **AI Resume Screening** — Automatic skill extraction and scoring
+- **AI Chatbot** — OpenAI-powered HR assistant
+- **Exit Management** — Resignation and clearance
+- **Reports & Analytics** — Comprehensive reporting with interactive charts
+- **Notification System** — Real-time alerts & email notifications
+
+---
+
+## ⚡️ AI Features
+
+- Resume parsing & scoring (Affinda/RChilli)
+- AI chatbot query handling (OpenAI)
+- Predictive workforce analytics & performance insights
+
+---
+
+## ☁️ External Integrations
+
+- **SendGrid** — Automated email notifications
+- **Cloudinary** — File storage & management
+- **Live Updates** — Real-time data sync
+
+---
 
 ## 🛠 Technology Stack
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | React.js, TypeScript, Tailwind CSS |
-| Backend | Convex (Serverless) |
-| Database | Convex DB |
-| AI/ML | OpenAI API, Custom NLP |
-| Email | SendGrid |
-| Storage | Cloudinary |
-| Charts | Recharts |
-| Icons | Lucide React |
-| Hosting | Vercel + Convex |
+| Layer        | Technology                          |
+| ------------ | ----------------------------------- |
+| Frontend     | React.js, TypeScript, Tailwind CSS  |
+| Backend      | Convex (Serverless), Node.js        |
+| Database     | Convex DB, MySQL (optional)         |
+| AI/NLP       | OpenAI API, Python, Custom NLP      |
+| Email System | SendGrid / SMTP                     |
+| Storage      | Cloudinary                          |
+| Hosting      | Vercel (Frontend), Convex (Backend) |
 
-## 📋 Prerequisites
+---
 
-- Node.js 18+ 
+## ✅ Prerequisites
+
+- Node.js 18+
 - npm or yarn
 - Convex account
-- SendGrid account (for emails)
-- OpenAI API key (for AI features)
-- Cloudinary account (for file storage)
+- SendGrid account
+- OpenAI API key
+- Cloudinary account
+
+---
 
 ## 🚀 Quick Start
 
-### 1. Clone Repository
 ```bash
 git clone <repository-url>
 cd hr360
 npm install
-```
-
-### 2. Environment Setup
-```bash
-cp .env.example .env
-```
-
-Fill in your environment variables:
-```env
-VITE_CONVEX_URL=your_convex_deployment_url
-JWT_SECRET=your_jwt_secret_key
-SENDGRID_API_KEY=your_sendgrid_api_key
-OPENAI_API_KEY=your_openai_api_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-```
-
-### 3. Convex Setup
-```bash
-npx convex dev
-```
-
-### 4. Start Development Server
-```bash
-npm run dev
-```
-
-## 👥 User Roles & Access
-
-### Admin
-- Full system access
-- User management and role assignment
-- System configuration
-- All reports and analytics
-
-### HR Manager
-- Employee management
-- Leave approvals
-- Payroll processing
-- Interview scheduling
-- Performance reviews
-
-### Employee
-- Personal dashboard
-- Attendance tracking
-- Leave applications
-- Payroll viewing
-- Performance monitoring
-
-### Candidate
-- Application tracking
-- Interview scheduling
-- Profile management
-- Communication with HR
-
-## 🔐 Demo Credentials
-
-```
-Admin: admin@hr360.com / password
-HR: hr@hr360.com / password
-Employee: employee@hr360.com / password
-Candidate: candidate@hr360.com / password
-```
-
-## 📊 Key Features Breakdown
-
-### Dashboard Analytics
-- Real-time KPI monitoring
-- Interactive charts and graphs
-- Role-based data visualization
-- Performance metrics tracking
-
-### AI-Powered Features
-- **Resume Screening**: Automatic parsing and scoring
-- **Chatbot**: Natural language HR assistance
-- **Predictive Analytics**: Workforce insights
-- **Performance Analysis**: AI-driven recommendations
-
-### Notification System
-- Real-time alerts
-- Email notifications
-- In-app messaging
-- Status updates
-
-### Reporting System
-- Attendance reports
-- Leave analytics
-- Payroll summaries
-- Performance insights
-- Department statistics
-
-## 🔧 API Endpoints
-
-### Authentication
-- `POST /auth/login` - User login
-- `POST /auth/register` - User registration
-- `GET /auth/verify` - Token verification
-
-### User Management
-- `GET /users` - Get all users
-- `POST /users` - Create user
-- `PUT /users/:id` - Update user
-- `DELETE /users/:id` - Delete user
-
-### Attendance
-- `GET /attendance/:userId` - Get user attendance
-- `POST /attendance/clockin` - Clock in
-- `POST /attendance/clockout` - Clock out
-
-### Leave Management
-- `GET /leaves/:userId` - Get user leaves
-- `POST /leaves` - Create leave request
-- `PUT /leaves/:id/status` - Update leave status
-
-## 🚀 Deployment
-
-### Frontend (Vercel)
-```bash
-npm run build
-vercel --prod
-```
-
-### Backend (Convex)
-```bash
-npx convex deploy
-```
-
-## 📱 Mobile Responsiveness
-
-The system is fully responsive and works seamlessly on:
-- Desktop computers
-- Tablets
-- Mobile phones
-- All modern browsers
-
-## 🔒 Security Features
-
-- JWT-based authentication
-- Role-based access control
-- Secure API endpoints
-- Data encryption
-- Input validation
-- XSS protection
-
-## 📈 Performance Optimization
-
-- Lazy loading components
-- Optimized bundle size
-- Efficient state management
-- Cached API responses
-- Image optimization
-- Code splitting
-
-## 🧪 Testing
-
-```bash
-npm run test
-npm run test:coverage
-```
-
-## 📚 Documentation
-
-- API documentation available at `/docs`
-- Component documentation in `/src/components`
-- Database schema in `/convex/schema.ts`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-For support and questions:
-- Email: support@hr360.com
-- Documentation: [docs.hr360.com]
-- Issues: GitHub Issues
-
-## 🎯 Roadmap
-
-- [ ] Mobile app development
-- [ ] Advanced AI features
-- [ ] Integration with more third-party services
-- [ ] Multi-language support
-- [ ] Advanced reporting
-- [ ] Workflow automation
-
----
-
-**HR360** - Transforming HR Management with AI 🚀
